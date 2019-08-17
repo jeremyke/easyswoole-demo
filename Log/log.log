@@ -1,0 +1,417 @@
+[2019-07-09 10:29:54][DEBUG][ERROR] : [Uncaught Error: Class 'EasySwoole\EasySwoole\Di' not found in /data/wwwroot/easyswoole/EasySwooleEvent.php:30
+Stack trace:
+#0 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(119): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#1 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#2 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(46): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#3 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#4 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/bin/easyswoole(24): EasySwoole\EasySwoole\Command\CommandRunner->run(Array)
+#5 /data/wwwroot/easyswoole/easyswoole(2): require('/data/wwwroot/e...')
+#6 {main}
+  thrown at file:/data/wwwroot/easyswoole/EasySwooleEvent.php line:30]
+[2019-07-09 15:24:35][DEBUG][WARNING] : [Declaration of App\HttpController\Base::onException(Throwable $throwable, $actionName): void should be compatible with EasySwoole\Http\AbstractInterface\Controller::onException(Throwable $throwable): void at file:/data/wwwroot/easyswoole/App/HttpController/Base.php line:11]
+[2019-07-09 15:45:52][DEBUG][ERROR] : [Call to a member function where() on string at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:17]
+[2019-07-09 15:51:22][DEBUG][ERROR] : [Call to a member function where() on string at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:17]
+[2019-07-09 15:53:32][DEBUG][ERROR] : [Call to a member function where() on string at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:17]
+[2019-07-09 15:55:40][DEBUG][ERROR] : [Call to a member function where() on string at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:17]
+[2019-07-09 20:04:58][DEBUG][ERROR] : [NOAUTH Authentication required. at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:24]
+[2019-07-09 20:38:20][DEBUG][ERROR] : [Connection refused at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:23]
+[2019-07-09 20:38:22][DEBUG][ERROR] : [Connection refused at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:23]
+[2019-07-09 20:38:25][DEBUG][ERROR] : [Connection refused at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:23]
+[2019-07-09 20:38:46][DEBUG][ERROR] : [Connection refused at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:23]
+[2019-07-09 20:41:26][DEBUG][ERROR] : [NOAUTH Authentication required. at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:24]
+[2019-07-09 20:41:30][DEBUG][ERROR] : [NOAUTH Authentication required. at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:24]
+[2019-07-09 20:46:56][DEBUG][ERROR] : [NOAUTH Authentication required. at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:24]
+[2019-07-09 20:53:01][DEBUG][ERROR] : [NOAUTH Authentication required. at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:24]
+[2019-07-09 20:54:17][DEBUG][ERROR] : [NOAUTH Authentication required. at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:24]
+[2019-07-09 22:13:15][DEBUG][WARNING] : [Redis::connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known at file:/data/wwwroot/easyswoole/App/Lib/Redis/Redis.php line:19]
+[2019-07-09 22:13:15][DEBUG][ERROR] : [Uncaught Exception: redis服务异常 in /data/wwwroot/easyswoole/App/Lib/Redis/Redis.php:27
+Stack trace:
+#0 /data/wwwroot/easyswoole/vendor/easyswoole/component/src/Singleton.php(19): App\Lib\Redis\Redis->__construct()
+#1 /data/wwwroot/easyswoole/EasySwooleEvent.php(47): App\Lib\Redis\Redis::getInstance()
+#2 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(119): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#3 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#4 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(46): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#5 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#6 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/bin/easyswool at file:/data/wwwroot/easyswoole/App/Lib/Redis/Redis.php line:27]
+[2019-07-09 22:48:23][DEBUG][WARNING] : [Redis::connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known at file:/data/wwwroot/easyswoole/App/Lib/Redis/Redis.php line:19]
+[2019-07-09 22:48:23][DEBUG][ERROR] : [Uncaught Exception: redis服务异常 in /data/wwwroot/easyswoole/App/Lib/Redis/Redis.php:27
+Stack trace:
+#0 /data/wwwroot/easyswoole/vendor/easyswoole/component/src/Singleton.php(19): App\Lib\Redis\Redis->__construct()
+#1 /data/wwwroot/easyswoole/EasySwooleEvent.php(57): App\Lib\Redis\Redis::getInstance()
+#2 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(119): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#3 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#4 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(46): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#5 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#6 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/bin/easyswool at file:/data/wwwroot/easyswoole/App/Lib/Redis/Redis.php line:27]
+[2019-07-09 22:48:37][DEBUG][WARNING] : [Redis::connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known at file:/data/wwwroot/easyswoole/App/Lib/Redis/Redis.php line:19]
+[2019-07-09 22:48:37][DEBUG][ERROR] : [Uncaught Exception: redis服务异常 in /data/wwwroot/easyswoole/App/Lib/Redis/Redis.php:27
+Stack trace:
+#0 /data/wwwroot/easyswoole/vendor/easyswoole/component/src/Singleton.php(19): App\Lib\Redis\Redis->__construct()
+#1 /data/wwwroot/easyswoole/EasySwooleEvent.php(57): App\Lib\Redis\Redis::getInstance()
+#2 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(119): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#3 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#4 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(46): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#5 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#6 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/bin/easyswool at file:/data/wwwroot/easyswoole/App/Lib/Redis/Redis.php line:27]
+[2019-07-09 22:49:14][DEBUG][WARNING] : [Redis::connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known at file:/data/wwwroot/easyswoole/App/Lib/Redis/Redis.php line:20]
+[2019-07-09 22:49:14][DEBUG][ERROR] : [Uncaught Exception: redis服务异常 in /data/wwwroot/easyswoole/App/Lib/Redis/Redis.php:28
+Stack trace:
+#0 /data/wwwroot/easyswoole/vendor/easyswoole/component/src/Singleton.php(19): App\Lib\Redis\Redis->__construct()
+#1 /data/wwwroot/easyswoole/EasySwooleEvent.php(57): App\Lib\Redis\Redis::getInstance()
+#2 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(119): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#3 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#4 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(46): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#5 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#6 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/bin/easyswool at file:/data/wwwroot/easyswoole/App/Lib/Redis/Redis.php line:28]
+[2019-07-09 22:49:48][DEBUG][WARNING] : [Redis::connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known at file:/data/wwwroot/easyswoole/App/Lib/Redis/Redis.php line:20]
+[2019-07-09 22:49:48][DEBUG][ERROR] : [Uncaught Exception: redis服务异常 in /data/wwwroot/easyswoole/App/Lib/Redis/Redis.php:28
+Stack trace:
+#0 /data/wwwroot/easyswoole/vendor/easyswoole/component/src/Singleton.php(19): App\Lib\Redis\Redis->__construct()
+#1 /data/wwwroot/easyswoole/EasySwooleEvent.php(57): App\Lib\Redis\Redis::getInstance()
+#2 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(119): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#3 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#4 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(46): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#5 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#6 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/bin/easyswool at file:/data/wwwroot/easyswoole/App/Lib/Redis/Redis.php line:28]
+[2019-07-09 22:50:20][DEBUG][WARNING] : [Redis::connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known at file:/data/wwwroot/easyswoole/App/Lib/Redis/Redis.php line:20]
+[2019-07-09 22:50:20][DEBUG][ERROR] : [Uncaught Exception: redis服务异常 in /data/wwwroot/easyswoole/App/Lib/Redis/Redis.php:28
+Stack trace:
+#0 /data/wwwroot/easyswoole/vendor/easyswoole/component/src/Singleton.php(19): App\Lib\Redis\Redis->__construct()
+#1 /data/wwwroot/easyswoole/EasySwooleEvent.php(57): App\Lib\Redis\Redis::getInstance()
+#2 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(119): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#3 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#4 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(46): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#5 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#6 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/bin/easyswool at file:/data/wwwroot/easyswoole/App/Lib/Redis/Redis.php line:28]
+[2019-07-09 22:50:33][DEBUG][WARNING] : [Redis::connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known at file:/data/wwwroot/easyswoole/App/Lib/Redis/Redis.php line:20]
+[2019-07-09 22:50:33][DEBUG][ERROR] : [Uncaught Exception: redis服务异常 in /data/wwwroot/easyswoole/App/Lib/Redis/Redis.php:28
+Stack trace:
+#0 /data/wwwroot/easyswoole/vendor/easyswoole/component/src/Singleton.php(19): App\Lib\Redis\Redis->__construct()
+#1 /data/wwwroot/easyswoole/EasySwooleEvent.php(57): App\Lib\Redis\Redis::getInstance()
+#2 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(119): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#3 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#4 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(46): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#5 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#6 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/bin/easyswool at file:/data/wwwroot/easyswoole/App/Lib/Redis/Redis.php line:28]
+[2019-07-09 22:51:36][DEBUG][WARNING] : [Redis::connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known at file:/data/wwwroot/easyswoole/App/Lib/Redis/Redis.php line:20]
+[2019-07-09 22:51:36][DEBUG][ERROR] : [Uncaught Exception: redis服务异常 in /data/wwwroot/easyswoole/App/Lib/Redis/Redis.php:28
+Stack trace:
+#0 /data/wwwroot/easyswoole/vendor/easyswoole/component/src/Singleton.php(19): App\Lib\Redis\Redis->__construct()
+#1 /data/wwwroot/easyswoole/EasySwooleEvent.php(57): App\Lib\Redis\Redis::getInstance()
+#2 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(119): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#3 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#4 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(46): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#5 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#6 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/bin/easyswool at file:/data/wwwroot/easyswoole/App/Lib/Redis/Redis.php line:28]
+[2019-07-09 22:52:34][DEBUG][NOTICE] : [Undefined index: host at file:/data/wwwroot/easyswoole/App/Lib/Redis/Redis.php line:20]
+[2019-07-09 22:52:34][DEBUG][NOTICE] : [Undefined index: port at file:/data/wwwroot/easyswoole/App/Lib/Redis/Redis.php line:20]
+[2019-07-09 22:52:34][DEBUG][NOTICE] : [Undefined index: time_out at file:/data/wwwroot/easyswoole/App/Lib/Redis/Redis.php line:20]
+[2019-07-09 22:52:34][DEBUG][WARNING] : [Redis::connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known at file:/data/wwwroot/easyswoole/App/Lib/Redis/Redis.php line:20]
+[2019-07-09 22:52:34][DEBUG][ERROR] : [Uncaught Exception: redis服务异常 in /data/wwwroot/easyswoole/App/Lib/Redis/Redis.php:28
+Stack trace:
+#0 /data/wwwroot/easyswoole/vendor/easyswoole/component/src/Singleton.php(19): App\Lib\Redis\Redis->__construct()
+#1 /data/wwwroot/easyswoole/EasySwooleEvent.php(57): App\Lib\Redis\Redis::getInstance()
+#2 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(119): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#3 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#4 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(46): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#5 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#6 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/bin/easyswool at file:/data/wwwroot/easyswoole/App/Lib/Redis/Redis.php line:28]
+[2019-07-10 00:43:23][DEBUG][NOTICE] : [Non-static method EasySwoole\EasySwoole\EasySwooleEvent::loadConf() should not be called statically at file:/data/wwwroot/easyswoole/EasySwooleEvent.php line:29]
+[2019-07-10 00:43:23][DEBUG][NOTICE] : [Non-static method EasySwoole\EasySwoole\EasySwooleEvent::loadConf() should not be called statically at file:/data/wwwroot/easyswoole/EasySwooleEvent.php line:29]
+[2019-07-10 00:43:23][DEBUG][NOTICE] : [Non-static method EasySwoole\EasySwoole\EasySwooleEvent::loadConf() should not be called statically at file:/data/wwwroot/easyswoole/EasySwooleEvent.php line:29]
+[2019-07-10 00:43:24][DEBUG][NOTICE] : [Undefined property: App\Lib\Process\ConsumerTest::$getProcessName at file:/data/wwwroot/easyswoole/App/Lib/Process/ConsumerTest.php line:32]
+[2019-07-10 00:43:24][DEBUG][INFO] : [----4]
+[2019-07-10 00:43:24][DEBUG][NOTICE] : [Undefined property: App\Lib\Process\ConsumerTest::$getProcessName at file:/data/wwwroot/easyswoole/App/Lib/Process/ConsumerTest.php line:32]
+[2019-07-10 00:43:24][DEBUG][INFO] : [----3]
+[2019-07-10 00:43:24][DEBUG][NOTICE] : [Undefined property: App\Lib\Process\ConsumerTest::$getProcessName at file:/data/wwwroot/easyswoole/App/Lib/Process/ConsumerTest.php line:32]
+[2019-07-10 00:43:24][DEBUG][INFO] : [----2]
+[2019-07-10 00:43:24][DEBUG][NOTICE] : [Undefined property: App\Lib\Process\ConsumerTest::$getProcessName at file:/data/wwwroot/easyswoole/App/Lib/Process/ConsumerTest.php line:32]
+[2019-07-10 00:43:24][DEBUG][INFO] : [----1]
+[2019-07-10 00:43:24][DEBUG][NOTICE] : [Undefined property: App\Lib\Process\ConsumerTest::$getProcessName at file:/data/wwwroot/easyswoole/App/Lib/Process/ConsumerTest.php line:32]
+[2019-07-10 00:43:24][DEBUG][INFO] : [----6]
+[2019-07-10 00:43:24][DEBUG][NOTICE] : [Undefined property: App\Lib\Process\ConsumerTest::$getProcessName at file:/data/wwwroot/easyswoole/App/Lib/Process/ConsumerTest.php line:32]
+[2019-07-10 00:43:24][DEBUG][INFO] : [----7]
+[2019-07-10 00:43:24][DEBUG][NOTICE] : [Undefined property: App\Lib\Process\ConsumerTest::$getProcessName at file:/data/wwwroot/easyswoole/App/Lib/Process/ConsumerTest.php line:32]
+[2019-07-10 00:43:24][DEBUG][INFO] : [----8]
+[2019-07-10 00:43:24][DEBUG][NOTICE] : [Undefined property: App\Lib\Process\ConsumerTest::$getProcessName at file:/data/wwwroot/easyswoole/App/Lib/Process/ConsumerTest.php line:32]
+[2019-07-10 00:43:24][DEBUG][INFO] : [----9]
+[2019-07-10 00:43:24][DEBUG][NOTICE] : [Undefined property: App\Lib\Process\ConsumerTest::$getProcessName at file:/data/wwwroot/easyswoole/App/Lib/Process/ConsumerTest.php line:32]
+[2019-07-10 00:43:24][DEBUG][INFO] : [----10]
+[2019-07-10 00:56:44][DEBUG][NOTICE] : [Undefined property: App\Lib\Process\ConsumerTest::$getProcessName at file:/data/wwwroot/easyswoole/App/Lib/Process/ConsumerTest.php line:32]
+[2019-07-10 00:56:44][DEBUG][INFO] : [----1]
+[2019-07-10 00:56:44][DEBUG][NOTICE] : [Undefined property: App\Lib\Process\ConsumerTest::$getProcessName at file:/data/wwwroot/easyswoole/App/Lib/Process/ConsumerTest.php line:32]
+[2019-07-10 00:56:44][DEBUG][INFO] : [----2]
+[2019-07-10 00:56:44][DEBUG][NOTICE] : [Undefined property: App\Lib\Process\ConsumerTest::$getProcessName at file:/data/wwwroot/easyswoole/App/Lib/Process/ConsumerTest.php line:32]
+[2019-07-10 00:56:44][DEBUG][INFO] : [----3]
+[2019-07-10 00:56:44][DEBUG][NOTICE] : [Undefined property: App\Lib\Process\ConsumerTest::$getProcessName at file:/data/wwwroot/easyswoole/App/Lib/Process/ConsumerTest.php line:32]
+[2019-07-10 00:56:44][DEBUG][INFO] : [----4]
+[2019-07-10 00:56:44][DEBUG][NOTICE] : [Undefined property: App\Lib\Process\ConsumerTest::$getProcessName at file:/data/wwwroot/easyswoole/App/Lib/Process/ConsumerTest.php line:32]
+[2019-07-10 00:56:44][DEBUG][INFO] : [----5]
+[2019-07-10 00:56:44][DEBUG][NOTICE] : [Undefined property: App\Lib\Process\ConsumerTest::$getProcessName at file:/data/wwwroot/easyswoole/App/Lib/Process/ConsumerTest.php line:32]
+[2019-07-10 00:56:44][DEBUG][INFO] : [----6]
+[2019-07-10 00:56:44][DEBUG][NOTICE] : [Undefined property: App\Lib\Process\ConsumerTest::$getProcessName at file:/data/wwwroot/easyswoole/App/Lib/Process/ConsumerTest.php line:32]
+[2019-07-10 00:56:44][DEBUG][INFO] : [----7]
+[2019-07-10 00:56:44][DEBUG][NOTICE] : [Undefined property: App\Lib\Process\ConsumerTest::$getProcessName at file:/data/wwwroot/easyswoole/App/Lib/Process/ConsumerTest.php line:32]
+[2019-07-10 00:56:44][DEBUG][INFO] : [----8]
+[2019-07-10 00:56:44][DEBUG][NOTICE] : [Undefined property: App\Lib\Process\ConsumerTest::$getProcessName at file:/data/wwwroot/easyswoole/App/Lib/Process/ConsumerTest.php line:32]
+[2019-07-10 00:56:44][DEBUG][INFO] : [----9]
+[2019-07-10 01:53:54][DEBUG][INFO] : [consumer_0----1]
+[2019-07-10 01:53:54][DEBUG][INFO] : [consumer_0----2]
+[2019-07-10 01:53:54][DEBUG][INFO] : [consumer_0----3]
+[2019-07-10 01:53:54][DEBUG][INFO] : [consumer_0----4]
+[2019-07-10 01:53:54][DEBUG][INFO] : [consumer_0----5]
+[2019-07-10 01:53:54][DEBUG][INFO] : [consumer_0----6]
+[2019-07-10 01:53:54][DEBUG][INFO] : [consumer_0----7]
+[2019-07-10 01:53:54][DEBUG][INFO] : [consumer_0----8]
+[2019-07-10 01:53:54][DEBUG][INFO] : [consumer_0----9]
+[2019-07-10 02:12:53][DEBUG][INFO] : [consumer_0----1]
+[2019-07-10 02:12:53][DEBUG][INFO] : [consumer_0----2]
+[2019-07-10 02:12:53][DEBUG][INFO] : [consumer_0----3]
+[2019-07-10 02:12:53][DEBUG][INFO] : [consumer_0----4]
+[2019-07-10 02:12:53][DEBUG][INFO] : [consumer_0----5]
+[2019-07-10 02:12:53][DEBUG][INFO] : [consumer_0----6]
+[2019-07-10 02:12:53][DEBUG][INFO] : [consumer_0----7]
+[2019-07-10 02:12:53][DEBUG][INFO] : [consumer_0----8]
+[2019-07-10 02:12:53][DEBUG][INFO] : [consumer_0----9]
+[2019-07-10 02:14:11][DEBUG][INFO] : [consumer_0----1]
+[2019-07-10 02:14:11][DEBUG][INFO] : [consumer_0----2]
+[2019-07-10 02:14:11][DEBUG][INFO] : [consumer_0----67]
+[2019-07-10 02:14:11][DEBUG][INFO] : [consumer_0----78]
+[2019-07-10 02:14:11][DEBUG][INFO] : [consumer_0----21]
+[2019-07-10 02:14:11][DEBUG][INFO] : [consumer_0----67]
+[2019-07-10 02:15:03][DEBUG][INFO] : [consumer_1----1]
+[2019-07-10 02:15:03][DEBUG][INFO] : [consumer_1----2]
+[2019-07-10 02:15:03][DEBUG][INFO] : [consumer_1----67]
+[2019-07-10 02:15:03][DEBUG][INFO] : [consumer_1----78]
+[2019-07-10 02:15:03][DEBUG][INFO] : [consumer_1----21]
+[2019-07-10 02:15:03][DEBUG][INFO] : [consumer_1----67]
+[2019-07-10 02:15:32][DEBUG][INFO] : [consumer_1----54]
+[2019-07-10 02:15:36][DEBUG][INFO] : [consumer_1----21]
+[2019-07-10 02:15:39][DEBUG][INFO] : [consumer_1----33]
+[2019-07-10 02:16:19][DEBUG][INFO] : [consumer_0----33]
+[2019-07-10 02:16:22][DEBUG][INFO] : [consumer_0----338]
+[2019-07-10 02:16:26][DEBUG][INFO] : [consumer_0----77]
+[2019-07-10 11:45:35][DEBUG][INFO] : [consumer_0----14]
+[2019-07-10 11:48:02][DEBUG][INFO] : [consumer_0----19]
+[2019-07-10 11:48:54][DEBUG][INFO] : [consumer_0----15]
+[2019-07-10 11:49:33][DEBUG][INFO] : [consumer_0----17]
+[2019-07-21 16:48:28][DEBUG][ERROR] : [Class 'App\Lib\Utils' not found at file:/data/wwwroot/easyswoole/App/Lib/Upload/Base.php line:57]
+[2019-07-21 18:27:39][DEBUG][ERROR] : [Class 'App\HttpController\Api\ClassArr' not found at file:/data/wwwroot/easyswoole/App/HttpController/Api/Upload.php line:28]
+[2019-07-21 18:28:36][DEBUG][ERROR] : [Class 'App\HttpController\Api\ClassArr' not found at file:/data/wwwroot/easyswoole/App/HttpController/Api/Upload.php line:28]
+[2019-07-21 18:29:56][DEBUG][ERROR] : [Class 'App\HttpController\Api\ClassArr' not found at file:/data/wwwroot/easyswoole/App/HttpController/Api/Upload.php line:28]
+[2019-07-21 22:35:10][DEBUG][NOTICE] : [Undefined property: App\HttpController\Api\Video::$logType at file:/data/wwwroot/easyswoole/App/HttpController/Api/Video.php line:22]
+[2019-07-21 22:35:10][DEBUG][INFO] : [add:{"name":"","cat_id":"1","image":"\u90fd\u662f\u5927\u6cd5\u5b98","url":"\u6253\u8fc7\u4e86\u9000\u4e86\u9000\u4e86\u9000\u4e86","type":"1","content":"\u7b2c\u4e09\u65b9\u58eb\u5927\u592b"}]
+[2019-07-21 22:35:26][DEBUG][NOTICE] : [Undefined property: App\HttpController\Api\Video::$logType at file:/data/wwwroot/easyswoole/App/HttpController/Api/Video.php line:22]
+[2019-07-21 22:35:26][DEBUG][INFO] : [add:{"name":"\u9b3c\u5730\u65b9\u4e2a\u53d1\u8fbe","cat_id":"1","image":"","url":"\u6253\u8fc7\u4e86\u9000\u4e86\u9000\u4e86\u9000\u4e86","type":"1","content":"\u7b2c\u4e09\u65b9\u58eb\u5927\u592b"}]
+[2019-07-21 22:39:27][DEBUG][INFO] : [video:add:{"name":"\u9b3c","cat_id":"1","image":"\u8428\u8fbe","url":"\u6253\u8fc7\u4e86\u9000\u4e86\u9000\u4e86\u9000\u4e86","type":"1","content":"\u7b2c\u4e09\u65b9\u58eb\u5927\u592b"}]
+[2019-07-21 22:39:36][DEBUG][INFO] : [video:add:{"name":"","cat_id":"1","image":"\u8428\u8fbe","url":"\u6253\u8fc7\u4e86\u9000\u4e86\u9000\u4e86\u9000\u4e86","type":"1","content":"\u7b2c\u4e09\u65b9\u58eb\u5927\u592b"}]
+[2019-07-21 22:40:41][DEBUG][INFO] : [video:add:{"name":"\u80dc\u591a\u8d1f\u5c11\u7684","cat_id":"","image":"\u8428\u8fbe","url":"\u6253\u8fc7\u4e86\u9000\u4e86\u9000\u4e86\u9000\u4e86","type":"1","content":"\u7b2c\u4e09\u65b9\u58eb\u5927\u592b"}]
+[2019-07-21 22:44:55][DEBUG][INFO] : [video:add:{"name":"\u80dc\u591a\u8d1f\u5c11\u7684","cat_id":"","image":"\u8428\u8fbe","url":"\u6253\u8fc7\u4e86\u9000\u4e86\u9000\u4e86\u9000\u4e86","type":"1","content":"\u7b2c\u4e09\u65b9\u58eb\u5927\u592b"}]
+[2019-07-21 22:48:27][DEBUG][INFO] : [video:add:{"name":"\u80dc\u591a\u8d1f\u5c11\u7684","cat_id":"","image":"\u8428\u8fbe","url":"\u6253\u8fc7\u4e86\u9000\u4e86\u9000\u4e86\u9000\u4e86","type":"1","content":"\u7b2c\u4e09\u65b9\u58eb\u5927\u592b"}]
+[2019-07-21 22:50:32][DEBUG][INFO] : [video:add:{"name":"\u80dc\u591a\u8d1f\u5c11\u7684","cat_id":"2","image":"","url":"\u6253\u8fc7\u4e86\u9000\u4e86\u9000\u4e86\u9000\u4e86","type":"1","content":"\u7b2c\u4e09\u65b9\u58eb\u5927\u592b"}]
+[2019-07-21 22:52:15][DEBUG][INFO] : [video:add:{"name":"\u80dc\u591a\u8d1f\u5c11\u7684","cat_id":"2","image":"","url":"\u6253\u8fc7\u4e86\u9000\u4e86\u9000\u4e86\u9000\u4e86","type":"1","content":"\u7b2c\u4e09\u65b9\u58eb\u5927\u592b"}]
+[2019-07-21 22:54:05][DEBUG][INFO] : [video:add:{"name":"","cat_id":"2","image":"\u4e3a\u4e86\u6211\u73a9\u4e86\u4e24\u5929","url":"\u6253\u8fc7\u4e86\u9000\u4e86\u9000\u4e86\u9000\u4e86","type":"1","content":"\u7b2c\u4e09\u65b9\u58eb\u5927\u592b"}]
+[2019-07-21 22:54:11][DEBUG][INFO] : [video:add:{"name":"q","cat_id":"2","image":"\u4e3a\u4e86\u6211\u73a9\u4e86\u4e24\u5929","url":"\u6253\u8fc7\u4e86\u9000\u4e86\u9000\u4e86\u9000\u4e86","type":"1","content":"\u7b2c\u4e09\u65b9\u58eb\u5927\u592b"}]
+[2019-07-21 22:54:15][DEBUG][INFO] : [video:add:{"name":"qd","cat_id":"2","image":"\u4e3a\u4e86\u6211\u73a9\u4e86\u4e24\u5929","url":"\u6253\u8fc7\u4e86\u9000\u4e86\u9000\u4e86\u9000\u4e86","type":"1","content":"\u7b2c\u4e09\u65b9\u58eb\u5927\u592b"}]
+[2019-07-21 22:54:21][DEBUG][INFO] : [video:add:{"name":"q","cat_id":"2","image":"\u4e3a\u4e86\u6211\u73a9\u4e86\u4e24\u5929","url":"\u6253\u8fc7\u4e86\u9000\u4e86\u9000\u4e86\u9000\u4e86","type":"1","content":"\u7b2c\u4e09\u65b9\u58eb\u5927\u592b"}]
+[2019-07-21 22:59:23][DEBUG][INFO] : [video:add:{"name":"qdrerewr","cat_id":"2","image":"","url":"\u6253\u8fc7\u4e86\u9000\u4e86\u9000\u4e86\u9000\u4e86","type":"1","content":"\u7b2c\u4e09\u65b9\u58eb\u5927\u592b"}]
+[2019-07-21 23:09:27][DEBUG][INFO] : [video:add:{"name":"qdrerewr","cat_id":"2","image":"","url":"\u6253\u8fc7\u4e86\u9000\u4e86\u9000\u4e86\u9000\u4e86","type":"1","content":"\u7b2c\u4e09\u65b9\u58eb\u5927\u592b"}]
+[2019-07-21 23:12:21][DEBUG][INFO] : [video:add:{"name":"qdrerewr","cat_id":"2","imagess":"","url":"\u6253\u8fc7\u4e86\u9000\u4e86\u9000\u4e86\u9000\u4e86","type":"1","content":"\u7b2c\u4e09\u65b9\u58eb\u5927\u592b"}]
+[2019-07-21 23:16:35][DEBUG][INFO] : [video:add:{"name":"qdrerewr","cat_id":"2","imagesfs":"","url":"\u6253\u8fc7\u4e86\u9000\u4e86\u9000\u4e86\u9000\u4e86","type":"1","content":"\u7b2c\u4e09\u65b9\u58eb\u5927\u592b"}]
+[2019-07-21 23:16:40][DEBUG][INFO] : [video:add:{"name":"qdrerewr","cat_id":"2","image":"","url":"\u6253\u8fc7\u4e86\u9000\u4e86\u9000\u4e86\u9000\u4e86","type":"1","content":"\u7b2c\u4e09\u65b9\u58eb\u5927\u592b"}]
+[2019-07-29 20:57:33][DEBUG][ERROR] : [Class 'App\HttpController\Api\App\Lib\AliyunSDK\AliVod' not found at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:55]
+[2019-07-30 18:18:12][DEBUG][ERROR] : [Uncaught Swoole\Exception: failed to listen server port[0.0.0.0:9501], Error: Address already in use[98] in /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php:56
+Stack trace:
+#0 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php(56): Swoole\Server->__construct('0.0.0.0', 9501, 2, 1)
+#1 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(115): EasySwoole\EasySwoole\ServerManager->createSwooleServer(9501, 2, '0.0.0.0', Array, 2, 1)
+#2 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#3 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(46): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#4 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#5 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/bin/ea at file:/data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php line:56]
+[2019-07-30 18:19:17][DEBUG][ERROR] : [Uncaught Swoole\Exception: failed to listen server port[0.0.0.0:9501], Error: Address already in use[98] in /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php:56
+Stack trace:
+#0 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php(56): Swoole\Server->__construct('0.0.0.0', 9501, 2, 1)
+#1 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(115): EasySwoole\EasySwoole\ServerManager->createSwooleServer(9501, 2, '0.0.0.0', Array, 2, 1)
+#2 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#3 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(46): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#4 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#5 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/bin/ea at file:/data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php line:56]
+[2019-07-30 18:22:40][DEBUG][ERROR] : [Call to undefined method App\Lib\AliyunSDK\AliVod::create_upload_video() at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:58]
+[2019-08-01 14:32:34][DEBUG][ERROR] : [Uncaught Swoole\Exception: failed to listen server port[0.0.0.0:9501], Error: Address already in use[98] in /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php:56
+Stack trace:
+#0 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php(56): Swoole\Server->__construct('0.0.0.0', 9501, 2, 1)
+#1 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(115): EasySwoole\EasySwoole\ServerManager->createSwooleServer(9501, 2, '0.0.0.0', Array, 2, 1)
+#2 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#3 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(46): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#4 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#5 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/bin/ea at file:/data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php line:56]
+[2019-08-01 15:47:00][DEBUG][ERROR] : [Class 'App\HttpController\Api\VideoModel' not found at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:79]
+[2019-08-01 16:37:38][DEBUG][NOTICE] : [Undefined property: App\HttpController\Api\Index::$param at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:82]
+[2019-08-01 16:37:38][DEBUG][NOTICE] : [Undefined property: App\HttpController\Api\Index::$param at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:82]
+[2019-08-01 16:37:38][DEBUG][ERROR] : [You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-20, 20' at line 1 query: SELECT SQL_CALC_FOUND_ROWS * FROM video WHERE  status = ?  ORDER BY id DESC  LIMIT -20, 20 at file:/data/wwwroot/easyswoole/vendor/joshcam/mysqli-database-class/MysqliDb.php line:2006]
+[2019-08-01 16:38:48][DEBUG][NOTICE] : [Undefined property: App\HttpController\Api\Index::$param at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:82]
+[2019-08-01 16:38:48][DEBUG][NOTICE] : [Undefined property: App\HttpController\Api\Index::$param at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:82]
+[2019-08-01 16:38:48][DEBUG][ERROR] : [You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-20, 20' at line 1 query: SELECT SQL_CALC_FOUND_ROWS * FROM video WHERE  status = ?  ORDER BY id DESC  LIMIT -20, 20 at file:/data/wwwroot/easyswoole/vendor/joshcam/mysqli-database-class/MysqliDb.php line:2006]
+[2019-08-01 16:38:51][DEBUG][NOTICE] : [Undefined property: App\HttpController\Api\Index::$param at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:82]
+[2019-08-01 16:38:51][DEBUG][NOTICE] : [Undefined property: App\HttpController\Api\Index::$param at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:82]
+[2019-08-01 16:38:51][DEBUG][ERROR] : [You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-20, 20' at line 1 query: SELECT SQL_CALC_FOUND_ROWS * FROM video WHERE  status = ?  ORDER BY id DESC  LIMIT -20, 20 at file:/data/wwwroot/easyswoole/vendor/joshcam/mysqli-database-class/MysqliDb.php line:2006]
+[2019-08-01 16:38:53][DEBUG][NOTICE] : [Undefined property: App\HttpController\Api\Index::$param at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:82]
+[2019-08-01 16:38:53][DEBUG][NOTICE] : [Undefined property: App\HttpController\Api\Index::$param at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:82]
+[2019-08-01 16:38:53][DEBUG][ERROR] : [You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-20, 20' at line 1 query: SELECT SQL_CALC_FOUND_ROWS * FROM video WHERE  status = ?  ORDER BY id DESC  LIMIT -20, 20 at file:/data/wwwroot/easyswoole/vendor/joshcam/mysqli-database-class/MysqliDb.php line:2006]
+[2019-08-01 16:41:19][DEBUG][NOTICE] : [Undefined property: App\HttpController\Api\Index::$param at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:82]
+[2019-08-01 16:41:19][DEBUG][NOTICE] : [Undefined property: App\HttpController\Api\Index::$param at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:82]
+[2019-08-01 16:41:19][DEBUG][ERROR] : [You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-20, 20' at line 1 query: SELECT SQL_CALC_FOUND_ROWS * FROM video WHERE  status = ?  LIMIT -20, 20 at file:/data/wwwroot/easyswoole/vendor/joshcam/mysqli-database-class/MysqliDb.php line:2006]
+[2019-08-01 16:41:41][DEBUG][NOTICE] : [Undefined property: App\HttpController\Api\Index::$param at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:82]
+[2019-08-01 16:41:41][DEBUG][NOTICE] : [Undefined property: App\HttpController\Api\Index::$param at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:82]
+[2019-08-01 16:41:41][DEBUG][ERROR] : [You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-20, 20' at line 1 query: SELECT SQL_CALC_FOUND_ROWS * FROM video ORDER BY id DESC  LIMIT -20, 20 at file:/data/wwwroot/easyswoole/vendor/joshcam/mysqli-database-class/MysqliDb.php line:2006]
+[2019-08-01 16:42:04][DEBUG][NOTICE] : [Undefined property: App\HttpController\Api\Index::$param at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:82]
+[2019-08-01 16:42:04][DEBUG][NOTICE] : [Undefined property: App\HttpController\Api\Index::$param at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:82]
+[2019-08-01 16:42:04][DEBUG][ERROR] : [You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-20, 20' at line 1 query: SELECT SQL_CALC_FOUND_ROWS * FROM video LIMIT -20, 20 at file:/data/wwwroot/easyswoole/vendor/joshcam/mysqli-database-class/MysqliDb.php line:2006]
+[2019-08-01 16:43:11][DEBUG][NOTICE] : [Undefined property: App\HttpController\Api\Index::$param at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:81]
+[2019-08-01 16:43:11][DEBUG][NOTICE] : [Undefined property: App\HttpController\Api\Index::$param at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:83]
+[2019-08-01 16:43:11][DEBUG][NOTICE] : [Undefined property: App\HttpController\Api\Index::$param at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:83]
+[2019-08-01 16:43:11][DEBUG][ERROR] : [You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-20, 20' at line 1 query: SELECT SQL_CALC_FOUND_ROWS * FROM video LIMIT -20, 20 at file:/data/wwwroot/easyswoole/vendor/joshcam/mysqli-database-class/MysqliDb.php line:2006]
+[2019-08-01 16:44:13][DEBUG][NOTICE] : [Undefined property: App\HttpController\Api\Index::$param at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:81]
+[2019-08-01 16:44:13][DEBUG][NOTICE] : [Undefined property: App\HttpController\Api\Index::$param at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:83]
+[2019-08-01 16:44:13][DEBUG][NOTICE] : [Undefined property: App\HttpController\Api\Index::$param at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:83]
+[2019-08-01 16:44:13][DEBUG][ERROR] : [You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-20, 20' at line 1 query: SELECT SQL_CALC_FOUND_ROWS * FROM video LIMIT -20, 20 at file:/data/wwwroot/easyswoole/vendor/joshcam/mysqli-database-class/MysqliDb.php line:2006]
+[2019-08-01 16:45:31][DEBUG][NOTICE] : [Undefined property: App\HttpController\Api\Index::$param at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:81]
+[2019-08-01 16:45:31][DEBUG][NOTICE] : [Undefined property: App\HttpController\Api\Index::$param at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:83]
+[2019-08-01 16:45:31][DEBUG][NOTICE] : [Undefined property: App\HttpController\Api\Index::$param at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:83]
+[2019-08-01 16:45:31][DEBUG][ERROR] : [You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-20, 20' at line 1 query: SELECT SQL_CALC_FOUND_ROWS * FROM video LIMIT -20, 20 at file:/data/wwwroot/easyswoole/vendor/joshcam/mysqli-database-class/MysqliDb.php line:2006]
+[2019-08-01 16:46:24][DEBUG][ERROR] : [Function name must be a string at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:85]
+[2019-08-01 16:47:45][DEBUG][ERROR] : [Call to undefined function App\HttpController\Api\data() at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:85]
+[2019-08-01 17:49:38][DEBUG][ERROR] : [Uncaught TypeError: Return value of App\Crontab\TestTask::setRule() must be of the type boolean, none returned in /data/wwwroot/easyswoole/App/Crontab/TestTask.php:21
+Stack trace:
+#0 /data/wwwroot/easyswoole/EasySwooleEvent.php(66): App\Crontab\TestTask::setRule('*/1 * * * *')
+#1 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(119): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#2 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#3 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(46): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#4 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#5 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/bin/easyswoole(24): EasySwoole\EasySwoole\C at file:/data/wwwroot/easyswoole/App/Crontab/TestTask.php line:21]
+[2019-08-01 17:50:36][DEBUG][ERROR] : [Uncaught TypeError: Argument 1 passed to EasySwoole\EasySwoole\Crontab\Crontab::addTask() must be of the type string, null given, called in /data/wwwroot/easyswoole/EasySwooleEvent.php on line 66 and defined in /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Crontab/Crontab.php:28
+Stack trace:
+#0 /data/wwwroot/easyswoole/EasySwooleEvent.php(66): EasySwoole\EasySwoole\Crontab\Crontab->addTask(NULL)
+#1 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(119): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#2 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#3 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(46): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#4 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\Comman at file:/data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Crontab/Crontab.php line:28]
+[2019-08-01 17:51:57][DEBUG][ERROR] : [Uncaught InvalidArgumentException: the cron task class 1 is invalid in /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Crontab/Crontab.php:45
+Stack trace:
+#0 /data/wwwroot/easyswoole/EasySwooleEvent.php(66): EasySwoole\EasySwoole\Crontab\Crontab->addTask('1')
+#1 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(119): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#2 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#3 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(46): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#4 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#5 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/bin/easyswoole(24): EasySwoole\EasySwoole\Command\C at file:/data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Crontab/Crontab.php line:45]
+[2019-08-01 17:53:17][DEBUG][ERROR] : [Uncaught TypeError: Return value of App\Crontab\TestTask::setRule() must be an object, string returned in /data/wwwroot/easyswoole/App/Crontab/TestTask.php:21
+Stack trace:
+#0 /data/wwwroot/easyswoole/EasySwooleEvent.php(66): App\Crontab\TestTask::setRule('*/1 * * * *')
+#1 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(119): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#2 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#3 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(46): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#4 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#5 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/bin/easyswoole(24): EasySwoole\EasySwoole\Command\C at file:/data/wwwroot/easyswoole/App/Crontab/TestTask.php line:21]
+[2019-08-01 17:53:49][DEBUG][WARNING] : [Use of undefined constant self - assumed 'self' (this will throw an Error in a future version of PHP) at file:/data/wwwroot/easyswoole/App/Crontab/TestTask.php line:21]
+[2019-08-01 17:53:49][DEBUG][ERROR] : [Uncaught TypeError: Return value of App\Crontab\TestTask::setRule() must be an object, string returned in /data/wwwroot/easyswoole/App/Crontab/TestTask.php:21
+Stack trace:
+#0 /data/wwwroot/easyswoole/EasySwooleEvent.php(66): App\Crontab\TestTask::setRule('*/1 * * * *')
+#1 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(119): EasySwoole\EasySwoole\EasySwooleEvent::mainServerCreate(Object(EasySwoole\EasySwoole\Swoole\EventRegister))
+#2 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#3 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(46): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#4 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#5 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/bin/easyswoole(24): EasySwoole\EasySwoole\Command\C at file:/data/wwwroot/easyswoole/App/Crontab/TestTask.php line:21]
+[2019-08-01 18:36:00][DEBUG][WARNING] : [file_put_contents() expects at least 2 parameters, 1 given at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:32]
+[2019-08-01 18:37:00][DEBUG][WARNING] : [file_put_contents(/data/wwwroot/easyswoole/webroot/video/json/): failed to open stream: Is a directory at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:32]
+[2019-08-01 18:38:00][DEBUG][WARNING] : [file_put_contents(/data/wwwroot/easyswoole/webroot/video/json/): failed to open stream: Is a directory at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:32]
+[2019-08-01 18:39:00][DEBUG][ERROR] : [syntax error, unexpected '}', expecting variable (T_VARIABLE) or '{' or '$' at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:35]
+[2019-08-01 18:40:00][DEBUG][ERROR] : [syntax error, unexpected '}', expecting variable (T_VARIABLE) or '{' or '$' at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:35]
+[2019-08-01 18:46:00][DEBUG][WARNING] : [file_put_contents(/data/wwwroot/easyswoole/webroot/video/json/): failed to open stream: Is a directory at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:33]
+[2019-08-01 18:46:00][DEBUG][WARNING] : [file_put_contents(/data/wwwroot/easyswoole/webroot/video/json/): failed to open stream: Is a directory at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:33]
+[2019-08-01 18:46:00][DEBUG][WARNING] : [file_put_contents(/data/wwwroot/easyswoole/webroot/video/json/): failed to open stream: Is a directory at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:33]
+[2019-08-01 18:47:00][DEBUG][WARNING] : [file_put_contents(/data/wwwroot/easyswoole/webroot/video/json/): failed to open stream: Is a directory at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:33]
+[2019-08-01 18:47:00][DEBUG][WARNING] : [file_put_contents(/data/wwwroot/easyswoole/webroot/video/json/): failed to open stream: Is a directory at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:33]
+[2019-08-01 18:47:00][DEBUG][WARNING] : [file_put_contents(/data/wwwroot/easyswoole/webroot/video/json/): failed to open stream: Is a directory at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:33]
+[2019-08-01 18:48:00][DEBUG][WARNING] : [file_put_contents(/data/wwwroot/easyswoole/webroot/video/json/): failed to open stream: Is a directory at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:33]
+[2019-08-01 18:48:00][DEBUG][WARNING] : [file_put_contents(/data/wwwroot/easyswoole/webroot/video/json/): failed to open stream: Is a directory at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:33]
+[2019-08-01 18:48:00][DEBUG][WARNING] : [file_put_contents(/data/wwwroot/easyswoole/webroot/video/json/): failed to open stream: Is a directory at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:33]
+[2019-08-01 18:49:00][DEBUG][WARNING] : [file_put_contents(/data/wwwroot/easyswoole/webroot/video/json/): failed to open stream: Is a directory at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:33]
+[2019-08-01 18:49:00][DEBUG][WARNING] : [file_put_contents(/data/wwwroot/easyswoole/webroot/video/json/): failed to open stream: Is a directory at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:33]
+[2019-08-01 18:49:00][DEBUG][WARNING] : [file_put_contents(/data/wwwroot/easyswoole/webroot/video/json/): failed to open stream: Is a directory at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:33]
+[2019-08-01 18:53:00][DEBUG][WARNING] : [file_put_contents(/data/wwwroot/easyswoole/webroot/video/json/): failed to open stream: Is a directory at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:37]
+[2019-08-01 18:53:00][DEBUG][WARNING] : [file_put_contents(/data/wwwroot/easyswoole/webroot/video/json/): failed to open stream: Is a directory at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:37]
+[2019-08-01 18:53:00][DEBUG][WARNING] : [file_put_contents(/data/wwwroot/easyswoole/webroot/video/json/): failed to open stream: Is a directory at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:37]
+[2019-08-01 18:54:00][DEBUG][WARNING] : [file_put_contents(/data/wwwroot/easyswoole/webroot/video/json/): failed to open stream: Is a directory at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:37]
+[2019-08-01 18:54:00][DEBUG][WARNING] : [file_put_contents(/data/wwwroot/easyswoole/webroot/video/json/): failed to open stream: Is a directory at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:37]
+[2019-08-01 18:54:00][DEBUG][WARNING] : [file_put_contents(/data/wwwroot/easyswoole/webroot/video/json/): failed to open stream: Is a directory at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:37]
+[2019-08-01 18:55:00][DEBUG][WARNING] : [file_put_contents(/data/wwwroot/easyswoole/webroot/video/json/): failed to open stream: Is a directory at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:37]
+[2019-08-01 18:55:00][DEBUG][WARNING] : [file_put_contents(/data/wwwroot/easyswoole/webroot/video/json/): failed to open stream: Is a directory at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:37]
+[2019-08-01 18:55:00][DEBUG][WARNING] : [file_put_contents(/data/wwwroot/easyswoole/webroot/video/json/): failed to open stream: Is a directory at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:37]
+[2019-08-01 18:55:23][DEBUG][WARNING] : [file_put_contents(/data/wwwroot/easyswoole/webroot/video/json/): failed to open stream: Is a directory at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:93]
+[2019-08-01 18:56:00][DEBUG][WARNING] : [file_put_contents(/data/wwwroot/easyswoole/webroot/video/json/): failed to open stream: Is a directory at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:37]
+[2019-08-01 18:56:00][DEBUG][WARNING] : [file_put_contents(/data/wwwroot/easyswoole/webroot/video/json/): failed to open stream: Is a directory at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:37]
+[2019-08-01 18:56:00][DEBUG][WARNING] : [file_put_contents(/data/wwwroot/easyswoole/webroot/video/json/): failed to open stream: Is a directory at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:37]
+[2019-08-01 18:59:00][DEBUG][NOTICE] : [Array to string conversion at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:37]
+[2019-08-01 18:59:00][DEBUG][NOTICE] : [Array to string conversion at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:37]
+[2019-08-01 18:59:00][DEBUG][NOTICE] : [Array to string conversion at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:37]
+[2019-08-01 18:59:00][DEBUG][NOTICE] : [Array to string conversion at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:37]
+[2019-08-01 18:59:00][DEBUG][NOTICE] : [Array to string conversion at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:37]
+[2019-08-01 18:59:00][DEBUG][NOTICE] : [Array to string conversion at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:37]
+[2019-08-01 18:59:00][DEBUG][NOTICE] : [Array to string conversion at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:37]
+[2019-08-01 18:59:00][DEBUG][NOTICE] : [Array to string conversion at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:37]
+[2019-08-01 18:59:00][DEBUG][NOTICE] : [Array to string conversion at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:37]
+[2019-08-01 18:59:00][DEBUG][NOTICE] : [Array to string conversion at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:37]
+[2019-08-01 18:59:00][DEBUG][NOTICE] : [Array to string conversion at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:37]
+[2019-08-01 18:59:00][DEBUG][NOTICE] : [Array to string conversion at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:37]
+[2019-08-01 18:59:00][DEBUG][NOTICE] : [Array to string conversion at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:37]
+[2019-08-01 18:59:00][DEBUG][NOTICE] : [Array to string conversion at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:37]
+[2019-08-01 18:59:00][DEBUG][NOTICE] : [Array to string conversion at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:37]
+[2019-08-01 18:59:00][DEBUG][NOTICE] : [Array to string conversion at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:37]
+[2019-08-01 18:59:00][DEBUG][NOTICE] : [Array to string conversion at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:37]
+[2019-08-01 18:59:00][DEBUG][NOTICE] : [Array to string conversion at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:37]
+[2019-08-01 18:59:00][DEBUG][NOTICE] : [Array to string conversion at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:37]
+[2019-08-10 15:24:11][DEBUG][NOTICE] : [Undefined property: App\HttpController\Api\Index::$param at file:/data/wwwroot/easyswoole/App/HttpController/Base.php line:90]
+[2019-08-10 15:24:11][DEBUG][WARNING] : [Division by zero at file:/data/wwwroot/easyswoole/App/HttpController/Base.php line:90]
+[2019-08-10 15:26:45][DEBUG][NOTICE] : [Undefined property: App\HttpController\Api\Index::$param at file:/data/wwwroot/easyswoole/App/HttpController/Base.php line:90]
+[2019-08-10 15:26:45][DEBUG][WARNING] : [Division by zero at file:/data/wwwroot/easyswoole/App/HttpController/Base.php line:90]
+[2019-08-10 17:33:03][DEBUG][ERROR] : [Class 'App\HttpController\Api\Cache' not found at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:107]
+[2019-08-10 17:33:24][DEBUG][ERROR] : [Class 'App\HttpController\Api\Cache' not found at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:107]
+[2019-08-10 18:09:24][DEBUG][ERROR] : [Uncaught Swoole\ExitException: swoole exit in /data/wwwroot/easyswoole/App/Lib/Cache/Video.php:44
+Stack trace:
+#0 /data/wwwroot/easyswoole/EasySwooleEvent.php(73): App\Lib\Cache\Video->setIndexVideo()
+#1 {main}
+  thrown at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:44]
+[2019-08-10 18:44:57][DEBUG][ERROR] : [Uncaught Error: Class 'App\Lib\Cache\Yaconf' not found in /data/wwwroot/easyswoole/App/Lib/Cache/Video.php:20
+Stack trace:
+#0 /data/wwwroot/easyswoole/EasySwooleEvent.php(74): App\Lib\Cache\Video->setIndexVideo()
+#1 {main}
+  thrown at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:20]
+[2019-08-10 18:45:07][DEBUG][ERROR] : [Uncaught Error: Class 'App\Lib\Cache\Yaconf' not found in /data/wwwroot/easyswoole/App/Lib/Cache/Video.php:20
+Stack trace:
+#0 /data/wwwroot/easyswoole/EasySwooleEvent.php(74): App\Lib\Cache\Video->setIndexVideo()
+#1 {main}
+  thrown at file:/data/wwwroot/easyswoole/App/Lib/Cache/Video.php line:20]
+[2019-08-15 19:09:50][DEBUG][ERROR] : [Uncaught Swoole\Exception: failed to listen server port[0.0.0.0:9501], Error: Address already in use[98] in /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php:57
+Stack trace:
+#0 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php(57): Swoole\Server->__construct('0.0.0.0', 9501, 2, 1)
+#1 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Core.php(115): EasySwoole\EasySwoole\ServerManager->createSwooleServer(9501, 2, '0.0.0.0', Array, 2, 1)
+#2 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/DefaultCommand/Start.php(42): EasySwoole\EasySwoole\Core->createServer()
+#3 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandContainer.php(46): EasySwoole\EasySwoole\Command\DefaultCommand\Start->exec(Array)
+#4 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/Command/CommandRunner.php(50): EasySwoole\EasySwoole\Command\CommandContainer->hook('start', Array)
+#5 /data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/bin/ea at file:/data/wwwroot/easyswoole/vendor/easyswoole/easyswoole/src/ServerManager.php line:57]
+[2019-08-15 19:19:53][DEBUG][NOTICE] : [Undefined variable: params at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:152]
+[2019-08-15 19:19:53][DEBUG][ERROR] : [Argument 1 passed to Elasticsearch\Client::get() must be of the type array, null given, called in /data/wwwroot/easyswoole/App/HttpController/Api/Index.php on line 152 at file:/data/wwwroot/easyswoole/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Client.php line:221]
+[2019-08-15 19:20:46][DEBUG][ERROR] : [Argument 1 passed to Elasticsearch\Client::get() must be of the type array, object given, called in /data/wwwroot/easyswoole/App/HttpController/Api/Index.php on line 152 at file:/data/wwwroot/easyswoole/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Client.php line:221]
+[2019-08-15 19:29:23][DEBUG][ERROR] : ["query" is not a valid parameter. Allowed parameters are "_source", "_source_excludes", "_source_includes", "allow_no_indices", "allow_partial_search_results", "analyze_wildcard", "analyzer", "batched_reduce_size", "ccs_minimize_roundtrips", "default_operator", "df", "docvalue_fields", "error_trace", "expand_wildcards", "explain", "filter_path", "from", "human", "ignore_throttled", "ignore_unavailable", "indices_boost", "lenient", "max_concurrent_shard_requests", "pre_filter_shard_size", "preference", "pretty", "q", "request_cache", "rest_total_hits_as_int", "routing", "scroll", "search_type", "seq_no_primary_term", "size", "sort", "source", "stats", "stored_fields", "suggest_field", "suggest_mode", "suggest_size", "suggest_text", "terminate_after", "timeout", "track_scores", "track_total_hits", "typed_keys", "version" at file:/data/wwwroot/easyswoole/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Endpoints/AbstractEndpoint.php line:235]
+[2019-08-15 19:46:55][DEBUG][ERROR] : [Call to undefined method App\Model\Es\EsClient::get() at file:/data/wwwroot/easyswoole/App/HttpController/Api/Index.php line:156]
+[2019-08-15 20:34:54][DEBUG][NOTICE] : [Undefined index: keyword at file:/data/wwwroot/easyswoole/App/HttpController/Api/Search.php line:25]
+[2019-08-15 20:35:09][DEBUG][ERROR] : [swoole exit at file:/data/wwwroot/easyswoole/App/HttpController/Api/Search.php line:31]
+[2019-08-15 20:44:20][DEBUG][NOTICE] : [Undefined index: _hit at file:/data/wwwroot/easyswoole/App/HttpController/Api/Search.php line:42]
+[2019-08-15 20:44:20][DEBUG][NOTICE] : [Undefined index: _hit at file:/data/wwwroot/easyswoole/App/HttpController/Api/Search.php line:42]
+[2019-08-15 20:44:20][DEBUG][NOTICE] : [Undefined index: _hit at file:/data/wwwroot/easyswoole/App/HttpController/Api/Search.php line:42]
+[2019-08-15 20:44:20][DEBUG][ERROR] : [Unsupported operand types at file:/data/wwwroot/easyswoole/App/HttpController/Base.php line:90]
+[2019-08-15 20:46:24][DEBUG][NOTICE] : [Undefined index: _hit at file:/data/wwwroot/easyswoole/App/HttpController/Api/Search.php line:42]
+[2019-08-15 20:46:24][DEBUG][NOTICE] : [Undefined index: _hit at file:/data/wwwroot/easyswoole/App/HttpController/Api/Search.php line:42]
+[2019-08-15 20:46:24][DEBUG][NOTICE] : [Undefined index: _hit at file:/data/wwwroot/easyswoole/App/HttpController/Api/Search.php line:42]
+[2019-08-15 20:47:33][DEBUG][ERROR] : [Unsupported operand types at file:/data/wwwroot/easyswoole/App/HttpController/Base.php line:90]
+[2019-08-15 20:48:28][DEBUG][ERROR] : [Unsupported operand types at file:/data/wwwroot/easyswoole/App/HttpController/Base.php line:90]

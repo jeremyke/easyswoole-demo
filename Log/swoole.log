@@ -1,0 +1,36 @@
+[2019-07-30 05:34:43 *19487.7]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-07-30 05:34:43 *19486.6]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-07-30 05:34:43 *19485.5]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-07-30 05:34:43 *19484.4]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-07-30 05:34:43 *19483.3]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-07-30 05:34:43 *19482.2]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-07-30 05:34:43 *19481.1]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-07-30 05:34:43 *19480.0]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-07-30 05:34:43 ^19479.15]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-07-30 05:34:43 ^19478.14]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-07-30 05:34:43 ^19477.13]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-07-30 05:34:43 ^19476.12]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-07-30 05:34:43 ^19475.11]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-07-30 05:34:43 ^19474.10]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-07-30 05:34:43 ^19473.9]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-07-30 05:34:43 ^19472.8]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-07-30 05:34:43 $19470.0]	WARNING	swSignal_callback (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-07-30 05:34:43 #19469.1]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-10 18:09:24 *20206.0]	ERROR	swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught Swoole\ExitException: swoole exit in /data/wwwroot/easyswoole/App/Lib/Cache/Video.php:44
+Stack trace:
+#0 /data/wwwroot/easyswoole/EasySwooleEvent.php(73): App\Lib\Cache\Video->setIndexVideo()
+#1 {main}
+  thrown in /data/wwwroot/easyswoole/App/Lib/Cache/Video.php on line 44
+[2019-08-10 18:09:24 $20196.0]	WARNING	swManager_check_exit_status: worker#0[pid=20206] abnormal exit, status=255, signal=0
+[2019-08-10 18:44:57 *20326.0]	ERROR	swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught Error: Class 'App\Lib\Cache\Yaconf' not found in /data/wwwroot/easyswoole/App/Lib/Cache/Video.php:20
+Stack trace:
+#0 /data/wwwroot/easyswoole/EasySwooleEvent.php(74): App\Lib\Cache\Video->setIndexVideo()
+#1 {main}
+  thrown in /data/wwwroot/easyswoole/App/Lib/Cache/Video.php on line 20
+[2019-08-10 18:44:57 $20316.0]	WARNING	swManager_check_exit_status: worker#0[pid=20326] abnormal exit, status=255, signal=0
+[2019-08-10 18:45:07 *20337.0]	ERROR	swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught Error: Class 'App\Lib\Cache\Yaconf' not found in /data/wwwroot/easyswoole/App/Lib/Cache/Video.php:20
+Stack trace:
+#0 /data/wwwroot/easyswoole/EasySwooleEvent.php(74): App\Lib\Cache\Video->setIndexVideo()
+#1 {main}
+  thrown in /data/wwwroot/easyswoole/App/Lib/Cache/Video.php on line 20
+[2019-08-10 18:45:07 $20316.0]	WARNING	swManager_check_exit_status: worker#0[pid=20337] abnormal exit, status=255, signal=0
