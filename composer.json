@@ -21,7 +21,8 @@
         "joshcam/mysqli-database-class": "dev-master",
         "alibabacloud/sdk": "^1.7",
         "easyswoole/fast-cache": "^1.1",
-        "elasticsearch/elasticsearch": "^7.0"
+        "elasticsearch/elasticsearch": "^7.0",
+        "easyswoole/mysqli-pool": "^1.0"
     },
     "require-dev": {
         "composer/composer": "^1.6"
