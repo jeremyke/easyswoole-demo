@@ -22,6 +22,7 @@ use App\Crontab\TestTask;
 use EasySwoole\Component\Timer;
 use EasySwoole\FastCache\Cache;
 use App\Model\Es\EsClient;
+use App\Lib\Pool\MysqlPool;
 
 class EasySwooleEvent implements Event
 {
@@ -80,6 +81,9 @@ class EasySwooleEvent implements Event
         Cache::getInstance()->setTempDir(EASYSWOOLE_TEMP_DIR)->attachToServer(ServerManager::getInstance()->getSwooleServer());
         //注入elasticsearch
         Di::getInstance()->set('ES',EsClient::getInstance());
+        //注册mysql连接池
+        PoolManager::getInstance()->register(MysqlPool::class);
+
     }
 
     public static function onRequest(Request $request, Response $response): bool
