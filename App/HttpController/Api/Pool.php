@@ -9,7 +9,7 @@ namespace App\HttpController\Api;
 use App\Lib\Pool\MysqlPool;
 use EasySwoole\Component\Pool\PoolManager;
 use App\Model\Pool\Mysql\Video as VideoPool;
-namespace App\HttpController\Base;
+use App\HttpController\Base;
 
 class Pool extends Base {
 
